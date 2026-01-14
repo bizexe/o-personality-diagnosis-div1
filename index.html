@@ -4,12 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>性格診断</title>
-  <link rel="apple-touch-icon-precomposed" href="https://onet.co.jp/sp/img_webclip.png">
+  <title>ワクワク婚活タイプ診断</title> <link rel="apple-touch-icon-precomposed" href="https://onet.co.jp/sp/img_webclip.png">
   <link rel="shortcut icon" href="https://onet.co.jp/favicon.ico" type="image/vnd.microsoft.icon">
   <link rel="mask-icon" href="https://onet.co.jp/Onet_SafariPin.svg" color="#bf0000">
+  
   <link href="assets_v2/css/common/sales_tool.min.css" rel="stylesheet">
   <link href="assets_v2/css/personality_diagnosis.min.css" rel="stylesheet">
+  
+  <link href="assets_v2/css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -17,13 +19,20 @@
     </header>
   <nav id="g-nav-right" class="off g-nav g-nav-right js-slideR"></nav>
 
+  <div class="hero-header">
+    <h1 class="hero-title">あなたの<span>恋</span>のタイプは？<br>ワクワク婚活診断</h1>
+    <p class="hero-subtitle">20の質問で、あなたにぴったりの婚活スタイルを見つけよう！</p>
+  </div>
+
   <div id="container">
     <div class="html_inc">
       <form name="personalityDiagnosisQuestions">
         <div id="personality-diagnosis--questions"></div>
         
         <div class="u-center u-mt40">
-          <button type="button" id="personality-diagnosis--button" class="actionButton" style="display:none;">診断結果を表示する</button>
+          <button type="button" id="personality-diagnosis--button" class="actionButton" style="display:none;">
+            診断結果を見る ✨
+          </button>
         </div>
         
         <input type="hidden" name="personalityDiagnosisResults">
@@ -32,8 +41,7 @@
       <div id="personality-diagnosis--modal" style="display:none;">
         <div class="dialog">
           <button type="button" class="dialogCloseButton">×</button>
-          <div class="dialogTop">あなたの診断結果</div>
-          <div class="dialogMain">
+          <div class="dialogTop">🎉 あなたの診断結果 🎉</div> <div class="dialogMain">
             <span class="dialogMainContent"></span>
           </div>
         </div>
