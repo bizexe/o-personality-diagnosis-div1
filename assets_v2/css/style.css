@@ -341,3 +341,20 @@ body {
         font-size: 1.2rem;
     }
 }
+
+/* モーダル内のテキスト表示を調整 */
+#personality-diagnosis--modal .dialogMainContent {
+  font-size: 1.1rem; /* 少し小さくして読みやすく */
+  line-height: 1.8;
+  text-align: left; /* 文章は左揃え */
+  background: #fff;
+  border: 1px solid #eee;
+  padding: 25px;
+  max-height: 300px; /* 長すぎる場合にスクロール */
+  overflow-y: auto;
+}
+
+#personality-diagnosis--modal .dialogTop {
+  font-size: 1.6rem;
+  padding: 0 10px;
+}
