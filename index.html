@@ -14,7 +14,7 @@
   <link href="assets_v2/css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="diagnosis-body">
   <header id="g-header"></header>
   <nav id="g-nav-right" class="off g-nav g-nav-right js-slideR"></nav>
 
@@ -23,12 +23,12 @@
     <p class="hero-subtitle">21の質問で、あなたにぴったりの婚活スタイルを鑑定します</p>
   </div>
 
-  <div id="container">
+  <div id="container" class="diagnosis-container">
     <div class="html_inc">
       <form name="personalityDiagnosisQuestions">
         <div id="personality-diagnosis--questions"></div>
         
-        <div class="u-center u-mt40">
+        <div class="u-center u-mt40" style="padding-bottom: 60px;">
           <button type="button" id="personality-diagnosis--button" class="actionButton" style="display:none;">
             診断結果を鑑定する ✨
           </button>
@@ -43,7 +43,7 @@
       </div>
 
       <script type="text/template" id="template_radioSet">
-        <fieldset class="u-mt24">
+        <fieldset class="question-card">
           <legend class="radioSetLegend">
             <span class="radioSetLegendNo"></span>
             <span class="radioSetLegendTitle"></span>
