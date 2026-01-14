@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>性格診断</title>
+  <link rel="apple-touch-icon-precomposed" href="https://onet.co.jp/sp/img_webclip.png">
+  <link rel="shortcut icon" href="https://onet.co.jp/favicon.ico" type="image/vnd.microsoft.icon">
+  <link rel="mask-icon" href="https://onet.co.jp/Onet_SafariPin.svg" color="#bf0000">
+  <link href="assets_v2/css/common/sales_tool.min.css" rel="stylesheet">
+  <link href="assets_v2/css/personality_diagnosis.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <header id="g-header">
+    </header>
+  <nav id="g-nav-right" class="off g-nav g-nav-right js-slideR"></nav>
+
+  <div id="container">
+    <div class="html_inc">
+      <form name="personalityDiagnosisQuestions">
+        <div id="personality-diagnosis--questions"></div>
+        
+        <div class="u-center u-mt40">
+          <button type="button" id="personality-diagnosis--button" class="actionButton" style="display:none;">診断結果を表示する</button>
+        </div>
+        
+        <input type="hidden" name="personalityDiagnosisResults">
+      </form>
+
+      <div id="personality-diagnosis--modal" style="display:none;">
+        <div class="dialog">
+          <button type="button" class="dialogCloseButton">×</button>
+          <div class="dialogTop">あなたの診断結果</div>
+          <div class="dialogMain">
+            <span class="dialogMainContent"></span>
+          </div>
+        </div>
+      </div>
+
+      <script type="text/template" id="template_radioSet">
+        <fieldset class="u-mt24">
+          <legend class="radioSetLegend">
+            <span class="radioSetLegendNo"></span>
+            <span class="radioSetLegendTitle"></span>
+          </legend>
+          <div class="radioSetItems"></div>
+          <div class="radioSetItemsError" style="display:none;">回答を選択してください。</div>
+        </fieldset>
+      </script>
+
+      <script type="text/template" id="template_radioSetItem">
+        <div class="radioSetItem">
+          <input type="radio" class="radioSetItemInput">
+          <label class="radioSetItemInputLabel"></label>
+        </div>
+      </script>
+    </div>
+  </div>
+
+  <script src="assets_v2/js/common/jquery-3.4.1.min.js"></script>
+  <script src="assets_v2/js/common/common.js"></script>
+  <script src="assets_v2/js/common/numeric_data.js"></script>
+  <script src="assets_v2/js/personality_diagnosis.js"></script>
+  
+</body>
+</html>
